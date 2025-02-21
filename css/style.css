@@ -100,13 +100,35 @@ body {
 }
 
 .container-main-top {
-  display: flex;
+  display: grid;
+  grid-template-columns: 438.72px;
+  grid-template-rows: 336px;
+  margin-top: 131px;
 }
-
 .flex-main-top {
   display: flex;
 }
-
+.list-main-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btn-main-top {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background: linear-gradient(#05C0CC, #2C90F7);
+}
+.main-headline {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.76px;
+}
+.img-main-top {
+  width: 985.05px;
+  height: 830px;
+  position: relative;
+}
 .container__inner {
   margin-top: 75px;
   margin-bottom: 75px;
