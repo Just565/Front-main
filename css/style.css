@@ -2,7 +2,6 @@ html {
   box-sizing: border-box;
 }
 html {
-  /* background: linear-gradient(#16161E #18253808 3%); */
   background-image: url("/images/BG.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,6 +16,9 @@ html {
 html,
 body {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -36,9 +38,7 @@ button {
 }
 
 .wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+ 
 }
 
 .main {
@@ -46,9 +46,8 @@ button {
 }
 
 body {
-  /* background-image: url("/images/BG.png");
-  background-repeat: no-repeat;
-  background-size: cover; */
+  display: flex;
+  flex-direction: column;
   font-family: "Roboto", "Montserrat", sans-serif;
   color: #fff;
 }
@@ -400,11 +399,13 @@ body {
 .flex {
   display: flex;
   justify-content: space-between;
+  margin-top: 0px;
 }
 
 .flex-left {
   display: flex;
   flex-direction: column;
+  width: 250px;
   row-gap: 15.74px;
   font-size: 12px;
   font-weight: 400;
