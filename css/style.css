@@ -36,11 +36,6 @@ button {
   border: 0;
   cursor: pointer;
 }
-
-.wrapper {
- 
-}
-
 .main {
   flex-grow: 1;
 }
@@ -53,7 +48,7 @@ body {
 }
 
 .container {
-  max-width: 1236.67px;
+  width: 1236.67px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -436,4 +431,21 @@ body {
   width: 100vw;
   height: 211px;
   background-color: #171B2D;
+}
+
+@media (max-width:1250px){
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .menu-item:not(:last-child) {
+    visibility: hidden;
+  }
+  .menu-list{
+    margin-left: 36px;
+  }
+  .burger-menu-link {
+    content: url(/images/Menu\ 2.svg);
+  }
 }
