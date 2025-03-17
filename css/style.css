@@ -119,6 +119,9 @@ body {
   font-weight: 400;
   line-height: 25.1px;
 }
+.item-main-top_hidden {
+  display: none;
+}
 .btn_main_top {
   display: flex;
   justify-content: center;
@@ -140,9 +143,9 @@ body {
   top: -170px;
 }
 .container_main_inner {
-  width: 1007px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  padding-left: 115px;
+  padding-right: 115px;
 }
 .container-main-middle {
   position: relative;
@@ -432,12 +435,22 @@ body {
   height: 211px;
   background-color: #171B2D;
 }
+.hidden_p_768 {
+  display: none;
+}
+.pig768 {
+  display: none;
+}
+.grafic768 {
+  display: none;
+}
+
 
 @media (max-width:1250px){
   .container {
     width: 768px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
   }
   .menu-item:not(:last-child) {
     visibility: hidden;
@@ -448,4 +461,86 @@ body {
   .burger-menu-link {
     content: url(/images/Menu\ 2.svg);
   }
+  .main-headline {
+    font-size: 27px;
+    line-height: 100%;
+  }
+  .item-main_inner {
+    font-size: 14px;
+  }
+  .item-main-top_hidden {
+    display: block;
+    font-size: 14px;
+    line-height: 25.1px;
+  }
+  .container-main-top {
+    grid-template-columns: 310px 519px;
+  }
+  .list-item:last-child {
+    display: none;
+  }
+  .container-main-middle {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(/images/bg768.png);
+  }
+  .hidden_p_768 {
+    display: block;
+  }
+  .hidden_p_fin {
+    display: none;
+  }
+  .container_main_inner {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    column-gap: 117px;
+    row-gap: 17px;
+    justify-items: normal;
+  }
+  .element-headline-top {
+    font-size: 32px;
+  }
+  .element-headline-bottom {
+    font-size: 16px;
+  }
+  .menu-headline {
+    padding-top: 60px;
+    padding-bottom: 34px;
+  }
+  .pig {
+  display: none;
+  }
+  .pig768 {
+    display: block;
+  }
+  .menu-firstblock {
+    margin-left: 23px;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+  .element-firstblock-top {
+    font-size: 22px;
+  }
+  .main-secondblock {
+    padding-top: 40px;
+  }
+  .grafic {
+    display: none;
+    }
+  .grafic768 {
+      display: block;
+    }
+  .menu-secondblock {
+      margin-right: 24px;
+      justify-content: space-between;
+      row-gap: 30px;
+    }
+  .element-secondblock-top {
+      font-size: 22px;
+    }
 }
