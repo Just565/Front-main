@@ -16,8 +16,10 @@ html,
 body {
   height: 100%;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 a {
@@ -41,7 +43,8 @@ button {
 footer {
   background-color: #171B2D;
   width: 100vw;
-  padding: 56px 22px 36px 56px;
+  padding-top: 56px;
+  padding-bottom: 22px;
 }
 body {
   display: flex;
@@ -288,6 +291,7 @@ body {
   gap: 50px;
   grid-template-columns: 316px 316px;
   grid-template-rows: 320px 320px;
+  justify-content: center;
 }
 .element-main-footer:nth-child(-n +4) {
   background-image: url(/images/Rectangle\ 53.svg);
@@ -426,7 +430,7 @@ display: none;
   
 @media (max-width:1250px){
   .container {
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -578,7 +582,7 @@ display: none;
     left: 279px;
     top: -142px;
     z-index: -1000;
-    overflow: hidden;
+   
    }
    .man-footer768 {
     height: 470px;
